@@ -63,8 +63,8 @@ The following SQL queries were developed to answer specific business questions:
 
 1. **Write a SQL query to retrieve all columns for sales made on '2022-11-05**:
 ```sql
-select * from retailsales
-where sale_date = '2022-11-05';
+select * from  RS
+WHERE CAST(sale_date AS DATE) = '2022-11-05';;
 ```
 
 2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**:
