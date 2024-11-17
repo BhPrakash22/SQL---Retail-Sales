@@ -47,8 +47,8 @@ select Distinct category from retailsales;
 
 -- Q1 write a SQL Query to retrieve all columns for sales made on 2022-11-05
 
-select * from retailsales
-where sale_date = '2022-11-05';
+select * from  RS
+WHERE CAST(sale_date AS DATE) = '2022-11-05';
  
 
 -- Q2 Write a SQL Query to retrieve all transactions where the category is clothing and the quantity sold is more than 4  in the month of nov-2022
